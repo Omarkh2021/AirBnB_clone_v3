@@ -4,12 +4,12 @@ from flask import jsonify, make_response
 from api.v1.views import app_views
 from models import storage
 
-classes = {"Amenity": "amenities",
-           "City": "cities",
-           "Place": "places",
-           "Review": "reviews",
-           "State": "states",
-           "User": "users"}
+classes = {"amenities": 47, 
+  "cities": 36, 
+  "places": 154, 
+  "reviews": 718, 
+  "states": 27, 
+  "users": 31}
 
 
 @app_views.route('/status', strict_slashes=False)
